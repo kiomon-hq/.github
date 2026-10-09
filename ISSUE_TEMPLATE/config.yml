@@ -2,13 +2,13 @@ blank_issues_enabled: false
 
 contact_links:
   - name: Security vulnerability
-    url: https://github.com/kiomonai/.github/blob/main/SECURITY.md
+    url: https://github.com/kiomon-hq/.github/blob/main/SECURITY.md
     about: Please report security issues privately, never in a public issue.
   - name: Documentation
     url: https://kiomon.com/docs
     about: Guides and API reference for Kiomon.
   - name: Question or idea
-    url: https://github.com/kiomonai
+    url: https://github.com/kiomon-hq
     about: "How to ask, and where: each SDK repository has its own Discussions tab."
   - name: Account or hosted-service support
     url: https://kiomon.com

@@ -1,7 +1,7 @@
 # Contributing to Kiomon
 
 Thanks for taking the time to contribute. This guide applies to every repository in the
-[`kiomonai`](https://github.com/kiomonai) organisation.
+[`kiomon-hq`](https://github.com/kiomon-hq) organisation.
 
 ## Before you start
 
