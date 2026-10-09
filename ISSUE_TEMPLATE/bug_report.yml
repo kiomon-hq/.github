@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for the report. Please do not use this form for security vulnerabilities — follow
-        the [security policy](https://github.com/kiomon-hq/.github/blob/main/SECURITY.md) instead.
+        the [security policy](https://github.com/kiomonai/.github/blob/main/SECURITY.md) instead.
 
   - type: input
     id: package

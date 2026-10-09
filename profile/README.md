@@ -9,8 +9,8 @@ retrieve it with provenance, and govern its lifecycle — from your own product.
 
 | Repository | Registry | Install |
 |---|---|---|
-| [`python-sdk`](https://github.com/kiomon-hq/python-sdk) | PyPI `kiomon` | `pip install kiomon` |
-| [`typescript-sdk`](https://github.com/kiomon-hq/typescript-sdk) | npm `@kiomon/kiomon` and `kiomon` | `npm install @kiomon/kiomon` |
+| [`python-sdk`](https://github.com/kiomonai/python-sdk) | PyPI `kiomon` | `pip install kiomon` |
+| [`typescript-sdk`](https://github.com/kiomonai/typescript-sdk) | npm `@kiomon/kiomon` and `kiomon` | `npm install @kiomon/kiomon` |
 
 Both SDKs are MIT-licensed, have zero runtime dependencies, and expose the same twelve
 memory-native verbs — named exactly like the hosted MCP tools, so a capability you have in an
@@ -43,9 +43,9 @@ Issues and pull requests are welcome in the repository for the language you are 
 repository shares this organisation's [contributing guide][contributing], [code of conduct][coc]
 and [security policy][security].
 
-[contributing]: https://github.com/kiomon-hq/.github/blob/main/CONTRIBUTING.md
-[coc]: https://github.com/kiomon-hq/.github/blob/main/CODE_OF_CONDUCT.md
-[security]: https://github.com/kiomon-hq/.github/blob/main/SECURITY.md
+[contributing]: https://github.com/kiomonai/.github/blob/main/CONTRIBUTING.md
+[coc]: https://github.com/kiomonai/.github/blob/main/CODE_OF_CONDUCT.md
+[security]: https://github.com/kiomonai/.github/blob/main/SECURITY.md
 
 ## License
 

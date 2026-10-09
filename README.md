@@ -1,13 +1,13 @@
 # Kiomon organisation defaults
 
-This repository holds the [`kiomon-hq`](https://github.com/kiomon-hq) organisation's community
+This repository holds the [`kiomonai`](https://github.com/kiomonai) organisation's community
 health files and its public profile. It contains no product code.
 
 ## What lives here
 
 | Path | Effect |
 |---|---|
-| `profile/README.md` | The page shown at [github.com/kiomon-hq](https://github.com/kiomon-hq) |
+| `profile/README.md` | The page shown at [github.com/kiomonai](https://github.com/kiomonai) |
 | `CONTRIBUTING.md` | Default contributing guide for every repository that does not define its own |
 | `CODE_OF_CONDUCT.md` | Default code of conduct — Contributor Covenant 2.1 |
 | `SECURITY.md` | Default security policy; points at private vulnerability reporting |
