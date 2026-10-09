@@ -8,8 +8,8 @@ contact_links:
     url: https://kiomon.com/docs
     about: Guides and API reference for Kiomon.
   - name: Question or idea
-    url: https://github.com/orgs/kiomon-hq/discussions
-    about: For questions and open-ended discussion, use Discussions.
+    url: https://github.com/kiomon-hq
+    about: "How to ask, and where: each SDK repository has its own Discussions tab."
   - name: Account or hosted-service support
     url: https://kiomon.com
     about: For help with your Kiomon account or the hosted service, contact support.
