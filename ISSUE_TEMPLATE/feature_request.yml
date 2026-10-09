@@ -1,0 +1,59 @@
+name: Feature request
+description: Suggest a capability the SDK should have.
+title: "feat: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The SDK surface deliberately mirrors the hosted API and the agent-facing MCP tools, so a
+        request that adds a verb here usually has to exist in the service first. Please describe
+        the problem rather than only the proposed method — it may already be reachable through
+        `request()`.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do that the SDK does not let you do today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like
+      description: The API shape you have in mind, if you have one.
+    validations:
+      required: false
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround today
+      description: |
+        How you are solving this now — for example through the `request()` escape hatch, or by
+        calling the REST API directly.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Which surface?
+      multiple: true
+      options:
+        - Python SDK
+        - TypeScript SDK
+        - Both
+        - Documentation
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and discussions for this request.
+          required: true

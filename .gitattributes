@@ -1,0 +1,10 @@
+# Normalise every text file to LF in the repository and in checkouts, so a
+# Windows working copy produces no spurious diffs.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary

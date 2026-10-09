@@ -1,0 +1,67 @@
+name: Bug report
+description: Something in an SDK does not work as documented.
+title: "bug: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please do not use this form for security vulnerabilities — follow
+        the [security policy](https://github.com/kiomon-hq/.github/blob/main/SECURITY.md) instead.
+
+  - type: input
+    id: package
+    attributes:
+      label: Package and version
+      description: The package you installed and the version you are running.
+      placeholder: kiomon 0.1.0 · @kiomon/kiomon 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime
+      description: Language and runtime version.
+      placeholder: Python 3.12.4 · Node 22.4.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: |
+        The smallest snippet that shows the problem, and the call it makes. Redact your API key.
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: error-details
+    attributes:
+      label: Error code, status and request id
+      description: |
+        If the SDK raised an error, paste the `code`, `status` and `request_id` it carried. These
+        let us find the matching request without asking you for anything else.
+      placeholder: code=rate_limited status=429 request_id=req_…
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues, including closed ones.
+          required: true
+        - label: I reproduced this on the latest version of the package.
+          required: true

@@ -1,0 +1,15 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/kiomon-hq/.github/blob/main/SECURITY.md
+    about: Please report security issues privately, never in a public issue.
+  - name: Documentation
+    url: https://kiomon.com/docs
+    about: Guides and API reference for Kiomon.
+  - name: Question or idea
+    url: https://github.com/orgs/kiomon-hq/discussions
+    about: For questions and open-ended discussion, use Discussions.
+  - name: Account or hosted-service support
+    url: https://kiomon.com
+    about: For help with your Kiomon account or the hosted service, contact support.
