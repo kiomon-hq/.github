@@ -69,5 +69,6 @@ synchronously like the other argument checks.
 
 ## Licensing
 
-By contributing you agree that your contribution is licensed under the repository's licence
-(MIT). There is no separate contributor licence agreement and no copyright assignment.
+By contributing you agree that your contribution is licensed under the licence the repository
+states — MIT for both SDKs. There is no separate contributor licence agreement and no copyright
+assignment.

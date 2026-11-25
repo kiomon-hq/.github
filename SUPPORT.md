@@ -11,9 +11,10 @@
 | Read the docs | [docs.kiomon.com](https://docs.kiomon.com) |
 | Report a problem with your Kiomon account or the hosted service | [kiomon.com](https://kiomon.com) support |
 
-This organisation hosts the **open-source SDKs** for Kiomon. Issues filed here are answered by the
-SDK maintainers on a best-effort basis — there is no support SLA for the open-source repositories.
-Support for the hosted product runs through [kiomon.com](https://kiomon.com).
+This organisation publishes the **public SDKs** for Kiomon — the Python and TypeScript clients, and
+the source of the documentation site. Issues filed here are answered by the SDK maintainers on a
+best-effort basis; there is no support SLA. Support for the hosted product runs through
+[kiomon.com](https://kiomon.com).
 
 ## Before you open an issue
 

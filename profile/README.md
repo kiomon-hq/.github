@@ -32,37 +32,33 @@ claude mcp add kiomon --transport http https://mcp.kiomon.com/mcp \
   --header "Authorization: Bearer $KIOMON_API_KEY"
 ```
 
-Or call it from code. Both SDKs are dependency-free:
+Or call it from your own code. Both SDKs are dependency-free:
 
 ```sh
 pip install kiomon            # Python 3.10+
 npm install @kiomon/kiomon    # Node 18+, Bun, Deno, Workers
 ```
 
-Or keep it on your machine — one binary, one SQLite file, no account, no network:
-
-```sh
-curl -fsSL https://raw.githubusercontent.com/kiomon-hq/kiomon/main/install.sh | sh
-```
-
 ## Repositories
+
+The repositories we publish. Both SDKs are MIT; the docs repository is published to be read. The
+service, the engine and the apps behind them are closed source.
 
 | Repository | What it is |
 |---|---|
 | [`python-sdk`](https://github.com/kiomon-hq/python-sdk) | Python client for the hosted service — typed end to end, standard library only |
 | [`typescript-sdk`](https://github.com/kiomon-hq/typescript-sdk) | TypeScript client — `@kiomon/kiomon`, plus the unscoped `kiomon` alias |
-| [`kiomon`](https://github.com/kiomon-hq/kiomon) | Kiomon local — the memory engine as one Rust binary and one SQLite file (Apache-2.0) |
 | [`docs`](https://github.com/kiomon-hq/docs) | Source of [docs.kiomon.com](https://docs.kiomon.com) |
 
 ## Contributing
 
-Issues and pull requests are welcome in the repository you are working in. Every repository shares
-this organisation's [contributing guide][contributing], [code of conduct][coc] and
+Issues and pull requests are welcome in the repository you are working in. Every public repository
+shares this organisation's [contributing guide][contributing], [code of conduct][coc] and
 [security policy][security].
 
 ## License
 
-SDKs MIT · Kiomon local Apache-2.0 · © Kiomon
+SDKs MIT · © Kiomon
 
 [contributing]: https://github.com/kiomon-hq/.github/blob/main/CONTRIBUTING.md
 [coc]: https://github.com/kiomon-hq/.github/blob/main/CODE_OF_CONDUCT.md

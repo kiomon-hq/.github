@@ -23,6 +23,17 @@ the same file itself, so the SDK repositories do not carry duplicates. Editing a
 it for every repository at once — including already-published content — so prefer a repository-level
 file when a repository genuinely needs to differ.
 
+## What is public, and what is not
+
+Three repositories are public: `python-sdk`, `typescript-sdk` and `docs`. Both SDKs are MIT. The docs
+repository is published to be read and is not open source, and everything else — the service, the
+engine, the apps, this organisation's own infrastructure — is closed.
+
+Keep that in mind here, because these files are org-wide defaults: anything written for one
+repository lands in all of them. In particular, do not describe the **product** as open source. The
+SDK clients are open source; Kiomon is not. "Public" is the safe word where you mean "you can read
+it on GitHub".
+
 ## The profile banner
 
 `profile/assets/banner-light.svg` and `banner-dark.svg` are the same plate in the two themes GitHub
