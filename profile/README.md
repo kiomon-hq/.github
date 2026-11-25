@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)"
             srcset="https://raw.githubusercontent.com/kiomon-hq/.github/main/profile/assets/banner-dark.svg">
-    <img alt="Kiomon — persistent memory for AI agents and apps"
+    <img alt="Kiomon — memory infrastructure for intelligent systems"
          src="https://raw.githubusercontent.com/kiomon-hq/.github/main/profile/assets/banner-light.svg"
          width="100%">
   </picture>
@@ -10,9 +10,9 @@
 
 <p align="center">
   <br>
-  Kiomon captures what your tools read, write and decide, links it into a graph, and hands an agent
-  back a <em>cited context packet</em> rather than a list of search hits — behind a write gate, so
-  nothing reaches memory unreviewed.
+  Kiomon is memory infrastructure for intelligent systems. What your agents read, decide and do is
+  captured, kept attributable, and served back as the context the next call needs — behind a write
+  gate, so nothing reaches memory unreviewed.
 </p>
 
 <p align="center">
