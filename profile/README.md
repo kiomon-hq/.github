@@ -1,52 +1,69 @@
-# Kiomon
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)"
+            srcset="https://raw.githubusercontent.com/kiomon-hq/.github/main/profile/assets/banner-dark.svg">
+    <img alt="Kiomon — persistent memory for AI agents and apps"
+         src="https://raw.githubusercontent.com/kiomon-hq/.github/main/profile/assets/banner-light.svg"
+         width="100%">
+  </picture>
+</div>
 
-**Persistent memory for AI agents and apps.** Capture what your users read and decide,
-retrieve it with provenance, and govern its lifecycle — from your own product.
+<p align="center">
+  <br>
+  Kiomon captures what your tools read, write and decide, links it into a graph, and hands an agent
+  back a <em>cited context packet</em> rather than a list of search hits — behind a write gate, so
+  nothing reaches memory unreviewed.
+</p>
 
-[kiomon.com](https://kiomon.com) · [Documentation](https://kiomon.com/docs)
+<p align="center">
+  <a href="https://kiomon.com">Website</a> &nbsp;·&nbsp;
+  <a href="https://docs.kiomon.com">Docs</a> &nbsp;·&nbsp;
+  <a href="https://kiomon.com/blog">Blog</a> &nbsp;·&nbsp;
+  <a href="https://app.kiomon.com/signup">Start free</a>
+</p>
 
-## Open-source SDKs
+## Get started
 
-| Repository | Registry | Install |
-|---|---|---|
-| [`python-sdk`](https://github.com/kiomon-hq/python-sdk) | PyPI `kiomon` | `pip install kiomon` |
-| [`typescript-sdk`](https://github.com/kiomon-hq/typescript-sdk) | npm `@kiomon/kiomon` and `kiomon` | `npm install @kiomon/kiomon` |
+Sign up at [app.kiomon.com](https://app.kiomon.com/signup), then point any MCP client at
+`https://mcp.kiomon.com/mcp` with your API key — Claude, Cursor, Codex, or your own agent:
 
-Both SDKs are MIT-licensed, have zero runtime dependencies, and expose the same twelve
-memory-native verbs — named exactly like the hosted MCP tools, so a capability you have in an
-agent you also have in code. Field names are the wire names in both, so an SDK call can be
-diffed against the equivalent MCP tool call.
-
+```sh
+claude mcp add kiomon --transport http https://mcp.kiomon.com/mcp \
+  --header "Authorization: Bearer $KIOMON_API_KEY"
 ```
-retrieve_memory    search_memory      get_memory        get_workspace_context
-get_latest_briefing reflect_session  draft_memory      manage_memory
-explore_memory_graph record_outcome   list_workspaces   select_workspace
+
+Or call it from code. Both SDKs are dependency-free:
+
+```sh
+pip install kiomon            # Python 3.10+
+npm install @kiomon/kiomon    # Node 18+, Bun, Deno, Workers
 ```
 
-```python
-from kiomon import Kiomon
+Or keep it on your machine — one binary, one SQLite file, no account, no network:
 
-kiomon = Kiomon(api_key=os.environ["KIOMON_API_KEY"])
-packet = kiomon.retrieve_memory(intent="execute", query="how does our deploy pipeline work?")
+```sh
+curl -fsSL https://raw.githubusercontent.com/kiomon-hq/kiomon/main/install.sh | sh
 ```
 
-```ts
-import { Kiomon } from "@kiomon/kiomon";
+## Repositories
 
-const kiomon = new Kiomon({ apiKey: process.env.KIOMON_API_KEY! });
-const packet = await kiomon.retrieveMemory({ intent: "execute", query: "how does our deploy pipeline work?" });
-```
+| Repository | What it is |
+|---|---|
+| [`python-sdk`](https://github.com/kiomon-hq/python-sdk) | Python client for the hosted service — typed end to end, standard library only |
+| [`typescript-sdk`](https://github.com/kiomon-hq/typescript-sdk) | TypeScript client — `@kiomon/kiomon`, plus the unscoped `kiomon` alias |
+| [`kiomon`](https://github.com/kiomon-hq/kiomon) | Kiomon local — the memory engine as one Rust binary and one SQLite file (Apache-2.0) |
+| [`docs`](https://github.com/kiomon-hq/docs) | Source of [docs.kiomon.com](https://docs.kiomon.com) |
 
 ## Contributing
 
-Issues and pull requests are welcome in the repository for the language you are working in. Every
-repository shares this organisation's [contributing guide][contributing], [code of conduct][coc]
-and [security policy][security].
+Issues and pull requests are welcome in the repository you are working in. Every repository shares
+this organisation's [contributing guide][contributing], [code of conduct][coc] and
+[security policy][security].
+
+## License
+
+SDKs MIT · Kiomon local Apache-2.0 · © Kiomon
 
 [contributing]: https://github.com/kiomon-hq/.github/blob/main/CONTRIBUTING.md
 [coc]: https://github.com/kiomon-hq/.github/blob/main/CODE_OF_CONDUCT.md
 [security]: https://github.com/kiomon-hq/.github/blob/main/SECURITY.md
-
-## License
-
-MIT © Kiomon

@@ -8,3 +8,6 @@
 *.gif binary
 *.ico binary
 *.pdf binary
+
+# Build inputs for tools/build-banner.py: font binaries, never diffed or merged.
+*.ttf binary

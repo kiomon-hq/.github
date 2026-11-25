@@ -5,7 +5,7 @@ contact_links:
     url: https://github.com/kiomon-hq/.github/blob/main/SECURITY.md
     about: Please report security issues privately, never in a public issue.
   - name: Documentation
-    url: https://kiomon.com/docs
+    url: https://docs.kiomon.com
     about: Guides and API reference for Kiomon.
   - name: Question or idea
     url: https://github.com/kiomon-hq

@@ -8,7 +8,7 @@
 | Report a bug | Open an issue in the relevant repository using the bug template |
 | Request a feature | Open an issue in the relevant repository using the feature template |
 | Report a security vulnerability | Follow the [security policy](SECURITY.md) — never a public issue |
-| Read the docs | [kiomon.com/docs](https://kiomon.com/docs) |
+| Read the docs | [docs.kiomon.com](https://docs.kiomon.com) |
 | Report a problem with your Kiomon account or the hosted service | [kiomon.com](https://kiomon.com) support |
 
 This organisation hosts the **open-source SDKs** for Kiomon. Issues filed here are answered by the

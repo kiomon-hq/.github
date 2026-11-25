@@ -1,13 +1,16 @@
 # Kiomon organisation defaults
 
 This repository holds the [`kiomon-hq`](https://github.com/kiomon-hq) organisation's community
-health files and its public profile. It contains no product code.
+health files and its public profile. It contains no product code — the only code here is the script
+that draws the profile banner.
 
 ## What lives here
 
 | Path | Effect |
 |---|---|
 | `profile/README.md` | The page shown at [github.com/kiomon-hq](https://github.com/kiomon-hq) |
+| `profile/assets/` | The banner and mark that page uses — generated, never drawn by hand |
+| `tools/build-banner.py` | Regenerates `profile/assets/`; fonts and provenance in `tools/fonts/` |
 | `CONTRIBUTING.md` | Default contributing guide for every repository that does not define its own |
 | `CODE_OF_CONDUCT.md` | Default code of conduct — Contributor Covenant 2.1 |
 | `SECURITY.md` | Default security policy; points at private vulnerability reporting |
@@ -19,6 +22,30 @@ GitHub applies these automatically to every repository in the organisation that 
 the same file itself, so the SDK repositories do not carry duplicates. Editing a file here changes
 it for every repository at once — including already-published content — so prefer a repository-level
 file when a repository genuinely needs to differ.
+
+## The profile banner
+
+`profile/assets/banner-light.svg` and `banner-dark.svg` are the same plate in the two themes GitHub
+renders, selected by the `<picture>` element at the top of `profile/README.md`. `logo-mark.svg` is
+the mark on its own, for anything that needs it without the wordmark.
+
+They are generated, not exported:
+
+```sh
+pip install fonttools uharfbuzz
+python tools/build-banner.py --preview out   # --preview also writes PNGs, needs Chrome
+```
+
+The lockup is the landing page's own — the mark, Bricolage Grotesque SemiBold for the wordmark,
+Inter for the supporting line, the hero's halftone field — and the wordmark is **outlined rather
+than set as `<text>`**, because GitHub serves README images through a proxy that has never seen the
+site's webfonts; a `font-family` there resolves to Arial. Optical size is applied per string from
+the variable axes in `tools/fonts/`, which is what keeps a display-size wordmark the same cut as
+the hero headline instead of the text face.
+
+The README references the SVGs by absolute `raw.githubusercontent.com` URL. Relative paths do not
+resolve reliably in an organisation profile README, and a rename is one `grep` — the two URLs are
+the only places the organisation name appears in that file.
 
 ## Changing something here
 
